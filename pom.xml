@@ -1,0 +1,87 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>swu.microbye</groupId>
+  <artifactId>subdomain</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>subDomain</name>
+  <url>http://maven.apache.org</url>
+
+
+  	<properties>
+    	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+			<spring.version>4.1.0.RELEASE</spring.version>
+			<shiro.version>1.2.2</shiro.version>
+			<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<build>
+	<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-shade-plugin</artifactId>
+			<version>3.0.0</version>
+			<configuration>
+				<createDependencyReducedPom>true</createDependencyReducedPom>
+			</configuration>
+			<executions>
+				<execution>
+					<phase>package</phase>
+					<goals>
+						<goal>shade</goal>
+					</goals>
+					<configuration>
+						<transformers>
+							<transformer
+									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+								<mainClass>swu.microbye.subdomain.SubDomain</mainClass>
+							</transformer>
+						</transformers>
+					</configuration>
+				</execution>
+			</executions>
+		</plugin>
+	</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+    		<groupId>org.apache.maven.plugins</groupId>
+    		<artifactId>maven-resources-plugin</artifactId>
+    		<version>2.6</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.7</version>
+		</dependency>
+        <!-- https://mvnrepository.com/artifact/org.mindrot/jbcrypt -->
+		<dependency>
+   		 	<groupId>org.mindrot</groupId>
+  		 	<artifactId>jbcrypt</artifactId>
+  		 	<version>0.3m</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>us.codecraft</groupId>
+			<version>0.5.3</version>
+			<artifactId>webmagic-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>us.codecraft</groupId>
+			<version>0.5.3</version>
+			<artifactId>webmagic-extension</artifactId>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/log4j/log4j -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+
+
+	</dependencies>
+
+</project>
