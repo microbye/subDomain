@@ -1,5 +1,8 @@
 package swu.microbye.subdomain;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -24,15 +27,28 @@ import us.codecraft.webmagic.processor.PageProcessor;
 import us.codecraft.webmagic.scheduler.PriorityScheduler;
 import us.codecraft.webmagic.scheduler.QueueScheduler;
 import java.net.InetAddress;
-/*
- *域名获取
- */
+/**
+ * 输入一个顶级域名
+ * 例如：
+ *
+ * java -jar **.jar qq.com  1000
+ * 表示获取主域名为qq.com的所有子域名。获取时间按为1000s
+ * 时间越长，理论上能够拿到的子域名就越多
+ *
+ * 这个工具可以用于域名管理时不清楚有多少个二级三级域名了，
+ * 用来一次性比对一下二级域名的情况
+ *
+ *
+ * */
+
 public class SubDomain implements PageProcessor{
 
 	private Logger logger = LoggerFactory.getLogger(getClass());
 	
 	private Site site = Site.me()
-            .setRetryTimes(3).setUseGzip(true);
+            .setRetryTimes(3).setUseGzip(true).setCharset("UTF-8")
+			.setUserAgent("Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 " +
+					"(KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36");
 	
 	private int START_DEPTH = 0;
 	private boolean startPage = true;
@@ -67,7 +83,7 @@ public class SubDomain implements PageProcessor{
 
 	public void process(Page page) {
 		
-    	if(page.getUrl().toString().equals("http://www."+domain)){
+    	if(page.getUrl().toString().equals("http://"+domain)){
     		startPage = true;
     	}
     	else{
@@ -163,8 +179,10 @@ public class SubDomain implements PageProcessor{
     	return true;
     }
     
-    public static void main(String[] args) {
-	    PropertyConfigurator.configure( "log4j.properties" );
+    public static void main(String[] args) throws FileNotFoundException {
+		InputStream is = SubDomain.class.getResourceAsStream("/log4j.properties");
+		System.out.println(is);
+	    PropertyConfigurator.configure(is);
     	final Logger logger = LoggerFactory.getLogger(SubDomain.class.getName());
     	if(args.length == 0){
 		    System.out.println("请传入域名");
@@ -187,7 +205,7 @@ public class SubDomain implements PageProcessor{
     	}
     	SubDomain processor = new SubDomain(domain,limitTime);
     	Spider spider = Spider.create(processor);
-    	spider.addUrl("http://www."+domain).setScheduler(new QueueScheduler()).addPipeline(new subDomainPipeline());
-    	spider.run();
+    	spider.addUrl("http://"+domain).setScheduler(new QueueScheduler()).addPipeline(new subDomainPipeline());
+    	spider.start();
     }
 }

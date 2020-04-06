@@ -7,6 +7,14 @@
   <version>0.0.1-SNAPSHOT</version>
   <url>http://maven.apache.org</url>
   <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <includes>
+          <include>*.properties</include>
+        </includes>
+      </resource>
+    </resources>
     <plugins>
       <plugin>
         <artifactId>maven-shade-plugin</artifactId>
@@ -33,9 +41,13 @@
     </plugins>
   </build>
   <properties>
+    <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
     <shiro.version>1.2.2</shiro.version>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <spring.version>4.1.0.RELEASE</spring.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 </project>
 

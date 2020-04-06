@@ -13,9 +13,13 @@
 
   	<properties>
     	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-			<spring.version>4.1.0.RELEASE</spring.version>
-			<shiro.version>1.2.2</shiro.version>
-			<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring.version>4.1.0.RELEASE</spring.version>
+		<shiro.version>1.2.2</shiro.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
 	<build>
 	<plugins>
@@ -44,6 +48,16 @@
 			</executions>
 		</plugin>
 	</plugins>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<!--<targetPath>${project.build.directory}</targetPath>-->
+				<includes>
+					<include>*.properties</include>
+				</includes>
+			</resource>
+		</resources>
+
 	</build>
 	<dependencies>
 		<dependency>

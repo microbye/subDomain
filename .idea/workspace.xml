@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f7bfe506-54aa-4fa3-b386-66e00f8a408d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/subdomain.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swu/microbye/subdomain/Log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swu/microbye/subdomain/SubDomain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swu/microbye/subdomain/SubDomain.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="H:\Program Files (x86)\apache-maven-3.3.9\repository" />
+        <option name="mavenHome" value="D:/Program Files (x86)/apache-maven-3.5.0" />
+        <option name="userSettingsFile" value="D:\Program Files (x86)\apache-maven-3.5.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadAnnotationsAutomatically" value="true" />
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1a9gr0qI0XZ7IZAZjn5OpJauOwN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/classes/swu/microbye/subdomain" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="I:\workspace\java\java-learning\SpringMVC\subDomain\src\main\resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\workspace\java\java-learning\SpringMVC\subDomain\target\classes\swu\microbye\subdomain" />
+      <recent name="I:\workspace\java\java-learning\SpringMVC\subDomain\src\main\java\swu\microbye\subdomain" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SubDomain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="swu.microbye.subdomain.SubDomain" />
+      <module name="subdomain" />
+      <option name="PROGRAM_PARAMETERS" value="baidu.com 600" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="swu.microbye.subdomain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="subdomain (1)" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="subdomain (1)" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SubDomain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+    <option name="myConnectionType" value="NONE" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f7bfe506-54aa-4fa3-b386-66e00f8a408d" name="Default Changelist" comment="" />
+      <created>1586153418610</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586153418610</updated>
+      <workItem from="1586153428729" duration="5512000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="388" y="360" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586156523573">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="388" y="360" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1586156523573" />
+    <state width="1381" height="276" key="GridCell.Tab.0.bottom" timestamp="1586163844766">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1381" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1586163844766" />
+    <state width="1381" height="276" key="GridCell.Tab.0.center" timestamp="1586163844766">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1381" height="276" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1586163844766" />
+    <state width="1381" height="276" key="GridCell.Tab.0.left" timestamp="1586163844766">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1381" height="276" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1586163844766" />
+    <state width="1381" height="276" key="GridCell.Tab.0.right" timestamp="1586163844766">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1381" height="276" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1586163844766" />
+    <state x="461" y="167" key="SettingsEditor" timestamp="1586153819480">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="167" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1586153819480" />
+    <state x="640" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1586153429699">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="640" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1586153429699" />
+  </component>
+</project>
